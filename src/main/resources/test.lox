@@ -51,3 +51,15 @@ fun makeCounter() {
 var counter = makeCounter();
 counter();
 counter();
+
+
+var a1 = "global";
+{
+    fun showA1() {
+        print a1;
+    }
+
+    showA1();
+    var a1 = "block";
+    showA1();
+}
